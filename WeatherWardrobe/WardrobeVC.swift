@@ -16,6 +16,7 @@ class WardrobeVC: UIViewController {
     @IBOutlet weak var PantsCollectionView: UICollectionView!
     @IBOutlet weak var ShoesCollectionView: UICollectionView!
     
+    @IBOutlet weak var scrollView: UIScrollView!
 //    var shirts = ["shirts1", "shirt2", "shirt3"]
     
     // Core Data
@@ -24,6 +25,7 @@ class WardrobeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.isScrollEnabled = true
 
         // Core Data
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {

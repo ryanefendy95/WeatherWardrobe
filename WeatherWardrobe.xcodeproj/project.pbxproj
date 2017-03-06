@@ -20,6 +20,7 @@
 		C9691B061E4FFF0600C5DB22 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691B051E4FFF0600C5DB22 /* SettingsVC.swift */; };
 		C9691B081E4FFF1200C5DB22 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691B071E4FFF1200C5DB22 /* AddVC.swift */; };
 		C99C6DBE1E50FD4600C3BBDB /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C6DBD1E50FD4600C3BBDB /* SettingsTableVC.swift */; };
+		C99D1A141E6DCF9700C636E1 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99D1A121E6DCF9700C636E1 /* Settings.storyboard */; };
 		C9EEABF91E50A17C000A0EBE /* OuterwearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEABF81E50A17C000A0EBE /* OuterwearCollectionViewCell.swift */; };
 		C9EEABFB1E50A3A8000A0EBE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEABFA1E50A3A8000A0EBE /* Model.swift */; };
 		C9EEABFF1E50A505000A0EBE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EEABFE1E50A505000A0EBE /* CoreData.framework */; };
@@ -42,6 +43,7 @@
 		C9691B051E4FFF0600C5DB22 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		C9691B071E4FFF1200C5DB22 /* AddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		C99C6DBD1E50FD4600C3BBDB /* SettingsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
+		C99D1A131E6DCF9700C636E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		C9EEABF81E50A17C000A0EBE /* OuterwearCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OuterwearCollectionViewCell.swift; sourceTree = "<group>"; };
 		C9EEABFA1E50A3A8000A0EBE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C9EEABFE1E50A505000A0EBE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -95,6 +97,7 @@
 			children = (
 				C9691AEF1E4FFA4300C5DB22 /* AppDelegate.swift */,
 				C9691AF31E4FFA4300C5DB22 /* Main.storyboard */,
+				C99D1A121E6DCF9700C636E1 /* Settings.storyboard */,
 				C2023D891E6DA72C008E0A6B /* Cell */,
 				C9EEABFC1E50A3B9000A0EBE /* ViewControllers */,
 				C9EEAC241E50A70A000A0EBE /* Model */,
@@ -196,6 +199,7 @@
 				C9691AFA1E4FFA4300C5DB22 /* LaunchScreen.storyboard in Resources */,
 				C22310B51E51EDE000C3992F /* Assets.xcassets in Resources */,
 				C9691AF51E4FFA4300C5DB22 /* Main.storyboard in Resources */,
+				C99D1A141E6DCF9700C636E1 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +243,14 @@
 				C9691AF91E4FFA4300C5DB22 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C99D1A121E6DCF9700C636E1 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99D1A131E6DCF9700C636E1 /* Base */,
+			);
+			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
