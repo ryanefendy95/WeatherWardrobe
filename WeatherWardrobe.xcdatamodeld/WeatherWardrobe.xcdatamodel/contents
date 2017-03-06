@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class"/>
-    <entity name="Entity1" representedClassName="Entity1" syncable="YES" codeGenerationType="class"/>
-    <entity name="OuterWearImages" representedClassName="OuterWearImages" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Outerwear" representedClassName="Outerwear" syncable="YES" codeGenerationType="class">
         <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
-    <entity name="ShoeImages" representedClassName="ShoeImages" syncable="YES" codeGenerationType="class">
-        <attribute name="images" optional="YES" attributeType="Transformable" syncable="YES"/>
+    <entity name="Pants" representedClassName="Pants" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="Shirt" representedClassName="Shirt" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="Shoes" representedClassName="Shoes" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Entity" positionX="-54" positionY="0" width="128" height="45"/>
-        <element name="Entity1" positionX="-36" positionY="9" width="128" height="45"/>
-        <element name="OuterWearImages" positionX="-63" positionY="-18" width="128" height="60"/>
-        <element name="ShoeImages" positionX="-18" positionY="27" width="128" height="60"/>
+        <element name="Pants" positionX="-54" positionY="0" width="128" height="60"/>
+        <element name="Shirt" positionX="-36" positionY="9" width="128" height="60"/>
+        <element name="Outerwear" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Shoes" positionX="-18" positionY="27" width="128" height="60"/>
     </elements>
 </model>

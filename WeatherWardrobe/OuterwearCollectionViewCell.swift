@@ -8,11 +8,8 @@
 
 import UIKit
 
-class ClothesCell: UICollectionViewCell {
+class OuterwearCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var clothingImageView: UIImageView!
-    
-    
-    
+    @IBOutlet weak var outerwearImageVIew: UIImageView!
     
 }

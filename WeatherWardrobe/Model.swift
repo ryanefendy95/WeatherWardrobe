@@ -14,11 +14,10 @@ class CurrentUser {
     
     static let sharedInstance = CurrentUser()
     
-    var outerWearImages: [UIImage]!
+    var outwearImages: [UIImage]!
     var shirtImages: [UIImage]!
     var pantsImages: [UIImage]!
     var shoesImages: [UIImage]!
-    
     
     enum catagories {
         case outerwear
@@ -28,7 +27,7 @@ class CurrentUser {
     }
     
     init() {
-        self.outerWearImages = []
+        self.outwearImages = []
         self.shirtImages = []
         self.pantsImages = []
         self.shoesImages = []
