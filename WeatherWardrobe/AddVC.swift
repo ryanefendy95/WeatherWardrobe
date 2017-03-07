@@ -1,11 +1,3 @@
-//
-//  AddVC.swift
-//  WeatherWardrobe
-//
-//  Created by Ryan Efendy on 2/01/17.
-//  Copyright © 2017 Ryan Efendy. All rights reserved.
-//
-
 import UIKit
 import MobileCoreServices
 import CoreData
@@ -25,7 +17,7 @@ class AddVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         clothingTypePicker.dataSource = self
         clothingTypePicker.delegate = self
         clothingTypePicker.showsSelectionIndicator = true
@@ -36,7 +28,7 @@ class AddVC: UIViewController {
         toolBar.sizeToFit()
         let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(AddVC.donePicker))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-
+        
         
         toolBar.setItems([spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
@@ -47,8 +39,8 @@ class AddVC: UIViewController {
         
         // Core Data
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                print("error")
-                return
+            print("error")
+            return
         }
         // enables to work/interact w/ core data
         self.managedObjectContext = appDelegate.persistentContainer.viewContext
@@ -56,7 +48,7 @@ class AddVC: UIViewController {
         
         ClothingTypeTextField.becomeFirstResponder()
     }
-
+    
     // camera imageView is tapped
     @IBAction func imageTapped(_ sender: Any) {
         // create pop up
@@ -169,13 +161,13 @@ extension AddVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate
         
         return true
     }
-
+    
     // implement the handler after an image is selected or when the Image Picker is closed
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image: UIImage? = info[UIImagePickerControllerEditedImage] as! UIImage?
         cameraImageView.image = image
-
+        
         
         picker.dismiss(animated: true, completion: { _ in })
     }

@@ -1,27 +1,18 @@
-//
-//  HomeVC.swift
-//  WeatherWardrobe
-//
-//  Created by Ryan Efendy on 2/01/17.
-//  Copyright © 2017 Ryan Efendy. All rights reserved.
-//
-
 import UIKit
 
 class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
-
-     @IBOutlet weak var summaryCollectionView: UICollectionView!
     
+    @IBOutlet weak var SummaryCollectionView: UICollectionView!
     var shirts = ["shirt1", "shirt2", "shirt3"]
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.summaryCollectionView.delegate = self
-        self.summaryCollectionView.dataSource = self
+        self.SummaryCollectionView.delegate = self
+        self.SummaryCollectionView.dataSource = self
     }
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

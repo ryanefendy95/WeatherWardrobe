@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2023D821E6C7C5D008E0A6B /* ShirtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2023D811E6C7C5D008E0A6B /* ShirtCollectionViewCell.swift */; };
-		C2023D841E6DA4EC008E0A6B /* PantsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2023D831E6DA4EC008E0A6B /* PantsCollectionViewCell.swift */; };
-		C2023D861E6DA4F8008E0A6B /* ShoesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2023D851E6DA4F8008E0A6B /* ShoesCollectionViewCell.swift */; };
-		C2023D881E6DA713008E0A6B /* SummaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2023D871E6DA713008E0A6B /* SummaryCollectionViewCell.swift */; };
 		C22310B51E51EDE000C3992F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22310B41E51EDE000C3992F /* Assets.xcassets */; };
+		C2A175251E6F55EA00006993 /* OuterwearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A175241E6F55EA00006993 /* OuterwearCollectionViewCell.swift */; };
+		C2A175271E6F560100006993 /* PantsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A175261E6F560100006993 /* PantsCollectionViewCell.swift */; };
+		C2A175291E6F561500006993 /* ShirtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A175281E6F561500006993 /* ShirtCollectionViewCell.swift */; };
+		C2A1752B1E6F561E00006993 /* ShoesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A1752A1E6F561E00006993 /* ShoesCollectionViewCell.swift */; };
+		C2A1752D1E6F562B00006993 /* SummaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A1752C1E6F562B00006993 /* SummaryCollectionViewCell.swift */; };
+		C2A1752F1E6F5EF300006993 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691B011E4FFCFC00C5DB22 /* HomeVC.swift */; };
 		C9691AF01E4FFA4300C5DB22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691AEF1E4FFA4300C5DB22 /* AppDelegate.swift */; };
 		C9691AF51E4FFA4300C5DB22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9691AF31E4FFA4300C5DB22 /* Main.storyboard */; };
 		C9691AFA1E4FFA4300C5DB22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9691AF81E4FFA4300C5DB22 /* LaunchScreen.storyboard */; };
-		C9691B021E4FFCFC00C5DB22 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691B011E4FFCFC00C5DB22 /* HomeVC.swift */; };
 		C9691B041E4FFEFD00C5DB22 /* WardrobeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691B031E4FFEFD00C5DB22 /* WardrobeVC.swift */; };
 		C9691B061E4FFF0600C5DB22 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691B051E4FFF0600C5DB22 /* SettingsVC.swift */; };
 		C9691B081E4FFF1200C5DB22 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691B071E4FFF1200C5DB22 /* AddVC.swift */; };
 		C99C6DBE1E50FD4600C3BBDB /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C6DBD1E50FD4600C3BBDB /* SettingsTableVC.swift */; };
-		C99D1A141E6DCF9700C636E1 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99D1A121E6DCF9700C636E1 /* Settings.storyboard */; };
-		C9EEABF91E50A17C000A0EBE /* OuterwearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEABF81E50A17C000A0EBE /* OuterwearCollectionViewCell.swift */; };
 		C9EEABFB1E50A3A8000A0EBE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEABFA1E50A3A8000A0EBE /* Model.swift */; };
 		C9EEABFF1E50A505000A0EBE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EEABFE1E50A505000A0EBE /* CoreData.framework */; };
 		C9EEAC021E50A521000A0EBE /* WeatherWardrobe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9EEAC001E50A521000A0EBE /* WeatherWardrobe.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C2023D811E6C7C5D008E0A6B /* ShirtCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShirtCollectionViewCell.swift; sourceTree = "<group>"; };
-		C2023D831E6DA4EC008E0A6B /* PantsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantsCollectionViewCell.swift; sourceTree = "<group>"; };
-		C2023D851E6DA4F8008E0A6B /* ShoesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoesCollectionViewCell.swift; sourceTree = "<group>"; };
-		C2023D871E6DA713008E0A6B /* SummaryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryCollectionViewCell.swift; sourceTree = "<group>"; };
 		C22310B41E51EDE000C3992F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WeatherWardrobe/Assets.xcassets; sourceTree = "<group>"; };
+		C2A175241E6F55EA00006993 /* OuterwearCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OuterwearCollectionViewCell.swift; path = ../OuterwearCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2A175261E6F560100006993 /* PantsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2A175281E6F561500006993 /* ShirtCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShirtCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2A1752A1E6F561E00006993 /* ShoesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoesCollectionViewCell.swift; path = ../ShoesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2A1752C1E6F562B00006993 /* SummaryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SummaryCollectionViewCell.swift; path = ../SummaryCollectionViewCell.swift; sourceTree = "<group>"; };
 		C9691AEC1E4FFA4300C5DB22 /* WeatherWardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherWardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9691AEF1E4FFA4300C5DB22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9691AF41E4FFA4300C5DB22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,8 +43,6 @@
 		C9691B051E4FFF0600C5DB22 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		C9691B071E4FFF1200C5DB22 /* AddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		C99C6DBD1E50FD4600C3BBDB /* SettingsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
-		C99D1A131E6DCF9700C636E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
-		C9EEABF81E50A17C000A0EBE /* OuterwearCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OuterwearCollectionViewCell.swift; sourceTree = "<group>"; };
 		C9EEABFA1E50A3A8000A0EBE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C9EEABFE1E50A505000A0EBE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C9EEAC011E50A521000A0EBE /* WeatherWardrobe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherWardrobe.xcdatamodel; sourceTree = "<group>"; };
@@ -62,14 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C2023D891E6DA72C008E0A6B /* Cell */ = {
+		C2A1752E1E6F563600006993 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C2023D871E6DA713008E0A6B /* SummaryCollectionViewCell.swift */,
-				C9EEABF81E50A17C000A0EBE /* OuterwearCollectionViewCell.swift */,
-				C2023D831E6DA4EC008E0A6B /* PantsCollectionViewCell.swift */,
-				C2023D851E6DA4F8008E0A6B /* ShoesCollectionViewCell.swift */,
-				C2023D811E6C7C5D008E0A6B /* ShirtCollectionViewCell.swift */,
+				C2A175241E6F55EA00006993 /* OuterwearCollectionViewCell.swift */,
+				C2A175281E6F561500006993 /* ShirtCollectionViewCell.swift */,
+				C2A1752A1E6F561E00006993 /* ShoesCollectionViewCell.swift */,
+				C2A1752C1E6F562B00006993 /* SummaryCollectionViewCell.swift */,
+				C2A175261E6F560100006993 /* PantsCollectionViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -97,8 +95,7 @@
 			children = (
 				C9691AEF1E4FFA4300C5DB22 /* AppDelegate.swift */,
 				C9691AF31E4FFA4300C5DB22 /* Main.storyboard */,
-				C99D1A121E6DCF9700C636E1 /* Settings.storyboard */,
-				C2023D891E6DA72C008E0A6B /* Cell */,
+				C2A1752E1E6F563600006993 /* Cell */,
 				C9EEABFC1E50A3B9000A0EBE /* ViewControllers */,
 				C9EEAC241E50A70A000A0EBE /* Model */,
 				C9691AF81E4FFA4300C5DB22 /* LaunchScreen.storyboard */,
@@ -112,8 +109,8 @@
 			children = (
 				C9691B011E4FFCFC00C5DB22 /* HomeVC.swift */,
 				C9691B031E4FFEFD00C5DB22 /* WardrobeVC.swift */,
-				C9691B071E4FFF1200C5DB22 /* AddVC.swift */,
 				C9691B051E4FFF0600C5DB22 /* SettingsVC.swift */,
+				C9691B071E4FFF1200C5DB22 /* AddVC.swift */,
 				C99C6DBD1E50FD4600C3BBDB /* SettingsTableVC.swift */,
 			);
 			name = ViewControllers;
@@ -168,7 +165,7 @@
 				TargetAttributes = {
 					C9691AEB1E4FFA4300C5DB22 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = STF78Q467Z;
+						DevelopmentTeam = YBL5J7ELT6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -199,7 +196,6 @@
 				C9691AFA1E4FFA4300C5DB22 /* LaunchScreen.storyboard in Resources */,
 				C22310B51E51EDE000C3992F /* Assets.xcassets in Resources */,
 				C9691AF51E4FFA4300C5DB22 /* Main.storyboard in Resources */,
-				C99D1A141E6DCF9700C636E1 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,18 +206,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A1752F1E6F5EF300006993 /* HomeVC.swift in Sources */,
 				C9EEABFB1E50A3A8000A0EBE /* Model.swift in Sources */,
-				C2023D861E6DA4F8008E0A6B /* ShoesCollectionViewCell.swift in Sources */,
+				C2A1752D1E6F562B00006993 /* SummaryCollectionViewCell.swift in Sources */,
 				C9691AF01E4FFA4300C5DB22 /* AppDelegate.swift in Sources */,
 				C9EEAC021E50A521000A0EBE /* WeatherWardrobe.xcdatamodeld in Sources */,
+				C2A1752B1E6F561E00006993 /* ShoesCollectionViewCell.swift in Sources */,
 				C9691B061E4FFF0600C5DB22 /* SettingsVC.swift in Sources */,
-				C2023D881E6DA713008E0A6B /* SummaryCollectionViewCell.swift in Sources */,
 				C99C6DBE1E50FD4600C3BBDB /* SettingsTableVC.swift in Sources */,
-				C2023D821E6C7C5D008E0A6B /* ShirtCollectionViewCell.swift in Sources */,
-				C2023D841E6DA4EC008E0A6B /* PantsCollectionViewCell.swift in Sources */,
-				C9691B021E4FFCFC00C5DB22 /* HomeVC.swift in Sources */,
+				C2A175271E6F560100006993 /* PantsCollectionViewCell.swift in Sources */,
 				C9691B041E4FFEFD00C5DB22 /* WardrobeVC.swift in Sources */,
-				C9EEABF91E50A17C000A0EBE /* OuterwearCollectionViewCell.swift in Sources */,
+				C2A175251E6F55EA00006993 /* OuterwearCollectionViewCell.swift in Sources */,
+				C2A175291E6F561500006993 /* ShirtCollectionViewCell.swift in Sources */,
 				C9691B081E4FFF1200C5DB22 /* AddVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,14 +239,6 @@
 				C9691AF91E4FFA4300C5DB22 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		C99D1A121E6DCF9700C636E1 /* Settings.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C99D1A131E6DCF9700C636E1 /* Base */,
-			);
-			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -351,7 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = STF78Q467Z;
+				DEVELOPMENT_TEAM = YBL5J7ELT6;
 				INFOPLIST_FILE = WeatherWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanefeny95.WeatherWardrobe;
@@ -364,7 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = STF78Q467Z;
+				DEVELOPMENT_TEAM = YBL5J7ELT6;
 				INFOPLIST_FILE = WeatherWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanefeny95.WeatherWardrobe;

@@ -1,27 +1,15 @@
-//
-//  WardrobeVC.swift
-//  WeatherWardrobe
-//
-//  Created by Ryan Efendy on 2/01/17.
-//  Copyright © 2017 Ryan Efendy. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
-class WardrobeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-
+class WardrobeVC: UIViewController {
+    
     @IBOutlet weak var OuterwearCollectionView: UICollectionView!
     @IBOutlet weak var ShirtCollectionView: UICollectionView!
     @IBOutlet weak var PantsCollectionView: UICollectionView!
     @IBOutlet weak var ShoesCollectionView: UICollectionView!
+ 
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    
-    var outerwears = ["outerwear1", "outerwear2", "outerwear3"]
-    var shirts = ["shirt1", "shirt2", "shirt3"]
-    var pants = ["pants1"]
-    var shoes = ["shoes1", "shoes2"]
+    //    var shirts = ["shirts1", "shirt2", "shirt3"]
     
     // Core Data
     var managedObjectContext: NSManagedObjectContext!
@@ -29,19 +17,7 @@ class WardrobeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.isScrollEnabled = true
-//        self.OuterwearCollectionView.delegate = self
-//        self.OuterwearCollectionView.dataSource = self
-//        
-//        self.ShirtCollectionView.delegate = self
-//        self.ShirtCollectionView.dataSource = self
-//        
-//        self.PantsCollectionView.delegate = self
-//        self.PantsCollectionView.dataSource = self
-//        
-//        self.ShoesCollectionView.delegate = self
-//        self.ShoesCollectionView.dataSource = self
-
+        
         // Core Data
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             print("error")
@@ -86,13 +62,13 @@ class WardrobeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
                 self.OuterwearCollectionView.reloadData()
             }
             
-//            self.entries = entryObjects as! [NSManagedObject]
-//        
-//            for entry in self.entries {
-//                let image = entry.value(forKey: "image") as! UIImage
-//
-//                CurrentUser.sharedInstance.outerWearImages.append(image)
-//            }
+            //            self.entries = entryObjects as! [NSManagedObject]
+            //
+            //            for entry in self.entries {
+            //                let image = entry.value(forKey: "image") as! UIImage
+            //
+            //                CurrentUser.sharedInstance.outerWearImages.append(image)
+            //            }
             
             self.OuterwearCollectionView.reloadData()
             
@@ -196,25 +172,24 @@ class WardrobeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
             print("could not fetch entries \(error), \(error.userInfo)")
         }
     }
+}
+
+extension WardrobeVC: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 4
+        return 1
     }
     
     // number of items
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.OuterwearCollectionView {
-                        return CurrentUser.sharedInstance.outwearImages.count
-//            return outerwears.count
+            return CurrentUser.sharedInstance.outwearImages.count
         } else if collectionView == self.ShirtCollectionView{
-                        return CurrentUser.sharedInstance.shirtImages.count
-//            return shirts.count
+            return CurrentUser.sharedInstance.shirtImages.count
         } else if collectionView == self.PantsCollectionView{
-                        return CurrentUser.sharedInstance.pantsImages.count
-//            return pants.count
+            return CurrentUser.sharedInstance.pantsImages.count
         } else if collectionView == self.ShoesCollectionView{
-                        return CurrentUser.sharedInstance.shoesImages.count
-//            return shoes.count
+            return CurrentUser.sharedInstance.shoesImages.count
         } else {
             return 0
         }
@@ -224,57 +199,28 @@ class WardrobeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == self.OuterwearCollectionView {
-//             create cell object from custom cell
-                        let cell:OuterwearCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "outerwearCell", for: indexPath) as! OuterwearCollectionViewCell
+            // create cell object from custom cell
+            let cell:OuterwearCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "outerwearCell", for: indexPath) as! OuterwearCollectionViewCell
             
-                        cell.outerwearImageVIew.image = CurrentUser.sharedInstance.outwearImages[indexPath.row]
-                        return cell
+            cell.outerwearImageVIew.image = CurrentUser.sharedInstance.outwearImages[indexPath.row]
             
-//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "outerwearCell", for: indexPath) as! OuterwearCollectionViewCell
-//            
-//            // set image
-//            cell.outerwearImageVIew.image = UIImage(named: outerwears[indexPath.row])
-//            return cell
-            
+            return cell
         } else if collectionView == self.ShirtCollectionView{
-//             create cell object from custom cell
-                        let cell:ShirtCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "shirtCell", for: indexPath) as! ShirtCollectionViewCell
+            // create cell object from custom cell
+            let cell:ShirtCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "shirtCell", for: indexPath) as! ShirtCollectionViewCell
             
             //            cell.shirtImageView.image = UIImage(named: shirts[indexPath.row])
-                        cell.shirtImageView.image = CurrentUser.sharedInstance.shirtImages[indexPath.row]
+            cell.shirtImageView.image = CurrentUser.sharedInstance.shirtImages[indexPath.row]
             
-                        return cell
-            
-//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "shirtCell", for: indexPath) as! ShirtCollectionViewCell
-//            
-//            // set image
-//            cell.shirtImageView.image = UIImage(named: shirts[indexPath.row])
-//            return cell
+            return cell
         } else if collectionView == self.PantsCollectionView{
-                        let cell:PantsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "pantsCell", for: indexPath) as! PantsCollectionViewCell
-                        cell.pantsImageVIew.image = CurrentUser.sharedInstance.pantsImages[indexPath.row]
-                        return cell
-            
-//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "pantsCell", for: indexPath) as! PantsCollectionViewCell
-//            
-//            // set image
-//            cell.pantsImageVIew.image = UIImage(named: outerwears[indexPath.row])
-//            return cell
+            let cell:PantsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "pantsCell", for: indexPath) as! PantsCollectionViewCell
+            cell.pantsImageVIew.image = CurrentUser.sharedInstance.pantsImages[indexPath.row]
+            return cell
         } else {
-                        let cell:ShoesCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "shoesCell", for: indexPath) as! ShoesCollectionViewCell
-                        cell.shoesImageVIew.image = CurrentUser.sharedInstance.shoesImages[indexPath.row]
-                        return cell
-            
-//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "shoesCell", for: indexPath) as! ShoesCollectionViewCell
-//            
-//            // set image
-//            cell.shoesImageVIew.image = UIImage(named: outerwears[indexPath.row])
-//            return cell
+            let cell:ShoesCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "shoesCell", for: indexPath) as! ShoesCollectionViewCell
+            cell.shoesImageVIew.image = CurrentUser.sharedInstance.shoesImages[indexPath.row]
+            return cell
         }
     }
-
 }
-
-//extension WardrobeVC: UICollectionViewDataSource {
-//    
-//    }
