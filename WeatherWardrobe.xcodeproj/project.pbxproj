@@ -112,8 +112,8 @@
 			children = (
 				C9691B011E4FFCFC00C5DB22 /* HomeVC.swift */,
 				C9691B031E4FFEFD00C5DB22 /* WardrobeVC.swift */,
-				C9691B051E4FFF0600C5DB22 /* SettingsVC.swift */,
 				C9691B071E4FFF1200C5DB22 /* AddVC.swift */,
+				C9691B051E4FFF0600C5DB22 /* SettingsVC.swift */,
 				C99C6DBD1E50FD4600C3BBDB /* SettingsTableVC.swift */,
 			);
 			name = ViewControllers;
@@ -168,7 +168,7 @@
 				TargetAttributes = {
 					C9691AEB1E4FFA4300C5DB22 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = YBL5J7ELT6;
+						DevelopmentTeam = STF78Q467Z;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -351,7 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YBL5J7ELT6;
+				DEVELOPMENT_TEAM = STF78Q467Z;
 				INFOPLIST_FILE = WeatherWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanefeny95.WeatherWardrobe;
@@ -364,7 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YBL5J7ELT6;
+				DEVELOPMENT_TEAM = STF78Q467Z;
 				INFOPLIST_FILE = WeatherWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanefeny95.WeatherWardrobe;
