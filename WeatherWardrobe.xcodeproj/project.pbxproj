@@ -185,7 +185,7 @@
 				TargetAttributes = {
 					C9691AEB1E4FFA4300C5DB22 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = YBL5J7ELT6;
+						DevelopmentTeam = STF78Q467Z;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -363,7 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YBL5J7ELT6;
+				DEVELOPMENT_TEAM = STF78Q467Z;
 				INFOPLIST_FILE = WeatherWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanefeny95.WeatherWardrobe;
@@ -376,7 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YBL5J7ELT6;
+				DEVELOPMENT_TEAM = STF78Q467Z;
 				INFOPLIST_FILE = WeatherWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanefeny95.WeatherWardrobe;

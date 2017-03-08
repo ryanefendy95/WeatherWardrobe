@@ -75,6 +75,10 @@ class AddVC: UIViewController {
         if cameraImageView.image == nil{
             return
         }
+        if ClothingTypeTextField.text == nil {
+            return
+        }
+        
         // if there's image save & dismiss
         self.saveImage(image: cameraImageView.image!)
         self.dismiss(animated: true, completion: nil)

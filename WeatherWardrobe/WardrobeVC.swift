@@ -1,7 +1,7 @@
 import UIKit
 import CoreData
 
-class WardrobeVC: UIViewController {
+class WardrobeVC: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var OuterwearCollectionView: UICollectionView!
     @IBOutlet weak var ShirtCollectionView: UICollectionView!
@@ -10,6 +10,7 @@ class WardrobeVC: UIViewController {
  
     
     //    var shirts = ["shirts1", "shirt2", "shirt3"]
+    @IBOutlet weak var scrollView: UIScrollView!
     
     // Core Data
     var managedObjectContext: NSManagedObjectContext!
@@ -17,7 +18,9 @@ class WardrobeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.scrollView.contentSize = CGSize(width: UIScreen.main.bounds.size.width, height: 751)
+        self.scrollView.delegate = self
+        scrollView.isDirectionalLockEnabled = true
         // Core Data
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             print("error")
@@ -27,7 +30,11 @@ class WardrobeVC: UIViewController {
         self.managedObjectContext = appDelegate.persistentContainer.viewContext
         
     }
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.x>0 {
+            scrollView.contentOffset.x = 0
+        }
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
@@ -223,4 +230,6 @@ extension WardrobeVC: UICollectionViewDataSource {
             return cell
         }
     }
+    
+    
 }
