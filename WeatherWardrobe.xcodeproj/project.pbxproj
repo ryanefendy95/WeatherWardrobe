@@ -24,6 +24,7 @@
 		C9691B041E4FFEFD00C5DB22 /* WardrobeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691B031E4FFEFD00C5DB22 /* WardrobeVC.swift */; };
 		C9691B061E4FFF0600C5DB22 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691B051E4FFF0600C5DB22 /* SettingsVC.swift */; };
 		C9691B081E4FFF1200C5DB22 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9691B071E4FFF1200C5DB22 /* AddVC.swift */; };
+		C994D2DE1E843E1500C70B9E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994D2DD1E843E1500C70B9E /* AlertView.swift */; };
 		C99C6DBE1E50FD4600C3BBDB /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C6DBD1E50FD4600C3BBDB /* SettingsTableVC.swift */; };
 		C9EEABFB1E50A3A8000A0EBE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEABFA1E50A3A8000A0EBE /* Model.swift */; };
 		C9EEABFF1E50A505000A0EBE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EEABFE1E50A505000A0EBE /* CoreData.framework */; };
@@ -50,6 +51,7 @@
 		C9691B031E4FFEFD00C5DB22 /* WardrobeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardrobeVC.swift; sourceTree = "<group>"; };
 		C9691B051E4FFF0600C5DB22 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		C9691B071E4FFF1200C5DB22 /* AddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		C994D2DD1E843E1500C70B9E /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		C99C6DBD1E50FD4600C3BBDB /* SettingsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
 		C9EEABFA1E50A3A8000A0EBE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C9EEABFE1E50A505000A0EBE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				C9EEABFA1E50A3A8000A0EBE /* Model.swift */,
+				C994D2DD1E843E1500C70B9E /* AlertView.swift */,
 				C9EEAC001E50A521000A0EBE /* WeatherWardrobe.xcdatamodeld */,
 			);
 			name = Model;
@@ -237,6 +240,7 @@
 				C261122C1E70413D004473D0 /* OuterwearCollectionViewCell.swift in Sources */,
 				C261122E1E70413D004473D0 /* SummaryCollectionViewCell.swift in Sources */,
 				C99C6DBE1E50FD4600C3BBDB /* SettingsTableVC.swift in Sources */,
+				C994D2DE1E843E1500C70B9E /* AlertView.swift in Sources */,
 				C2A175271E6F560100006993 /* PantsCollectionViewCell.swift in Sources */,
 				C9691B041E4FFEFD00C5DB22 /* WardrobeVC.swift in Sources */,
 				C2A175291E6F561500006993 /* ShirtCollectionViewCell.swift in Sources */,

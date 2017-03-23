@@ -1,7 +1,7 @@
 import UIKit
 import CoreData
 
-class WardrobeVC: UIViewController, UIScrollViewDelegate {
+class WardrobeVC: UIViewController, UIScrollViewDelegate, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var OuterwearCollectionView: UICollectionView!
     @IBOutlet weak var ShirtCollectionView: UICollectionView!
@@ -29,6 +29,14 @@ class WardrobeVC: UIViewController, UIScrollViewDelegate {
         // enables to work/interact w/ core data
         self.managedObjectContext = appDelegate.persistentContainer.viewContext
         
+        
+        
+        longPressSetUp()
+        longPressSetUp2()
+        longPressSetUp3()
+        longPressSetUp4()
+
+        
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.x>0 {
@@ -43,6 +51,9 @@ class WardrobeVC: UIViewController, UIScrollViewDelegate {
         self.fetchPantsImages()
         self.fetchShoesImages()
     }
+
+
+    
     
     // pulling outwear images from core data
     func featchOuterwearImages() {
@@ -183,6 +194,9 @@ class WardrobeVC: UIViewController, UIScrollViewDelegate {
 
 extension WardrobeVC: UICollectionViewDataSource {
     
+    
+    
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -230,5 +244,212 @@ extension WardrobeVC: UICollectionViewDataSource {
             return cell
         }
     }
+    
+}
+
+
+
+
+
+extension WardrobeVC {
+    func longPressSetUp () {
+        let lpgr1 = UILongPressGestureRecognizer(target: self, action: #selector(self.handleLongPress))
+        
+        lpgr1.minimumPressDuration = 0.5
+        lpgr1.delaysTouchesBegan = true
+        lpgr1.delegate = self
+        self.OuterwearCollectionView.addGestureRecognizer(lpgr1)
+    }
+    
+    
+    func handleLongPress(gestureReconizer: UILongPressGestureRecognizer) {
+        if gestureReconizer.state != UIGestureRecognizerState.ended {
+            return
+        }
+        
+        AlertViews.showAlertDelete(parentVC: self) {
+
+//            let point = gestureReconizer.location(in: self.OuterwearCollectionView)
+//            let indexPath = self.OuterwearCollectionView.indexPathForItem(at: point)
+            
+
+            let indexRow = 0
+                //            var cell = self.OuterwearCollectionView.cellForItem(at: index)
+                let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Outerwear")
+                
+                do {
+                    // store result from fetch into entryObjects
+                    let entryObjects = try self.managedObjectContext.fetch(fetchRequest)
+                    
+                    // check if the result contains anything returned from fetch
+                    if entryObjects.count > 0 {
+                        
+                        let entriesObjects = entryObjects as! [NSManagedObject]
+                        
+                        self.managedObjectContext.delete(entriesObjects[indexRow])
+                        CurrentUser.sharedInstance.outwearImages.remove(at: indexRow)
+                        self.OuterwearCollectionView.reloadData()
+                    }
+                    
+                }catch let error as NSError {
+                    print("could not fetch entries \(error), \(error.userInfo)")
+                }
+                
+                // do stuff with your cell, for example print the indexPath
+//                print(index.row)
+        }
+
+    }
+    
+    
+    
+    
+    // shirt
+    func longPressSetUp2 () {
+        let lpgr1 = UILongPressGestureRecognizer(target: self, action: #selector(self.handleLongPress2))
+        
+        lpgr1.minimumPressDuration = 0.5
+        lpgr1.delaysTouchesBegan = true
+        lpgr1.delegate = self
+        self.ShirtCollectionView.addGestureRecognizer(lpgr1)
+    }
+    
+    
+    func handleLongPress2(gestureReconizer: UILongPressGestureRecognizer) {
+        if gestureReconizer.state != UIGestureRecognizerState.ended {
+            return
+        }
+        
+        AlertViews.showAlertDelete(parentVC: self) {
+            
+            //            let point = gestureReconizer.location(in: self.OuterwearCollectionView)
+            //            let indexPath = self.OuterwearCollectionView.indexPathForItem(at: point)
+            
+            
+            let indexRow = 0
+            //            var cell = self.OuterwearCollectionView.cellForItem(at: index)
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Shirt")
+            
+            do {
+                // store result from fetch into entryObjects
+                let entryObjects = try self.managedObjectContext.fetch(fetchRequest)
+                
+                // check if the result contains anything returned from fetch
+                if entryObjects.count > 0 {
+                    
+                    let entriesObjects = entryObjects as! [NSManagedObject]
+                    
+                    self.managedObjectContext.delete(entriesObjects[indexRow])
+                    CurrentUser.sharedInstance.shirtImages.remove(at: indexRow)
+                    self.ShirtCollectionView.reloadData()
+                }
+                
+            }catch let error as NSError {
+                print("could not fetch entries \(error), \(error.userInfo)")
+            }
+            
+            // do stuff with your cell, for example print the indexPath
+            //                print(index.row)
+        }
+        
+    }
+    
+    
+    
+    // pants
+    func longPressSetUp3 () {
+        let lpgr1 = UILongPressGestureRecognizer(target: self, action: #selector(self.handleLongPress3))
+        
+        lpgr1.minimumPressDuration = 0.5
+        lpgr1.delaysTouchesBegan = true
+        lpgr1.delegate = self
+        self.PantsCollectionView.addGestureRecognizer(lpgr1)
+    }
+    
+    
+    func handleLongPress3(gestureReconizer: UILongPressGestureRecognizer) {
+        if gestureReconizer.state != UIGestureRecognizerState.ended {
+            return
+        }
+        
+        AlertViews.showAlertDelete(parentVC: self) {
+            
+            let indexRow = 0
+            //            var cell = self.OuterwearCollectionView.cellForItem(at: index)
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Pants")
+            
+            do {
+                // store result from fetch into entryObjects
+                let entryObjects = try self.managedObjectContext.fetch(fetchRequest)
+                
+                // check if the result contains anything returned from fetch
+                if entryObjects.count > 0 {
+                    
+                    let entriesObjects = entryObjects as! [NSManagedObject]
+                    
+                    self.managedObjectContext.delete(entriesObjects[indexRow])
+                    CurrentUser.sharedInstance.pantsImages.remove(at: indexRow)
+                    self.PantsCollectionView.reloadData()
+                }
+                
+            }catch let error as NSError {
+                print("could not fetch entries \(error), \(error.userInfo)")
+            }
+            
+            // do stuff with your cell, for example print the indexPath
+            //                print(index.row)
+        }
+        
+    }
+
+    
+    
+    // shoes
+    func longPressSetUp4 () {
+        let lpgr1 = UILongPressGestureRecognizer(target: self, action: #selector(self.handleLongPress4))
+        
+        lpgr1.minimumPressDuration = 0.5
+        lpgr1.delaysTouchesBegan = true
+        lpgr1.delegate = self
+        self.ShoesCollectionView.addGestureRecognizer(lpgr1)
+    }
+    
+    
+    func handleLongPress4(gestureReconizer: UILongPressGestureRecognizer) {
+        if gestureReconizer.state != UIGestureRecognizerState.ended {
+            return
+        }
+        
+        AlertViews.showAlertDelete(parentVC: self) {
+            
+            let indexRow = 0
+            //            var cell = self.OuterwearCollectionView.cellForItem(at: index)
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Shoes")
+            
+            do {
+                // store result from fetch into entryObjects
+                let entryObjects = try self.managedObjectContext.fetch(fetchRequest)
+                
+                // check if the result contains anything returned from fetch
+                if entryObjects.count > 0 {
+                    
+                    let entriesObjects = entryObjects as! [NSManagedObject]
+                    
+                    self.managedObjectContext.delete(entriesObjects[indexRow])
+                    CurrentUser.sharedInstance.shoesImages.remove(at: indexRow)
+                    self.ShoesCollectionView.reloadData()
+                }
+                
+            }catch let error as NSError {
+                print("could not fetch entries \(error), \(error.userInfo)")
+            }
+            
+            // do stuff with your cell, for example print the indexPath
+            //                print(index.row)
+        }
+        
+    }
+    
+    
     
 }
