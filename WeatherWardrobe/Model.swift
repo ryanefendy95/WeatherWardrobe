@@ -27,6 +27,3 @@ class CurrentUser {
     
 }
 
-
-
-

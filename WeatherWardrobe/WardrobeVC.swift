@@ -231,5 +231,4 @@ extension WardrobeVC: UICollectionViewDataSource {
         }
     }
     
-    
 }
